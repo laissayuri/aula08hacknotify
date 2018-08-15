@@ -1,0 +1,159 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;*/
+
+body{
+     margin: 0;
+     font-family: 'Montserrat', sans-serif;
+}
+
+header{
+     background-image: url(../img/background.png);
+     border-top: 9px solid #2ecc71;
+     padding: 0 40px;
+     color: white;
+     overflow: auto;
+}
+
+header > div {
+     margin: 50px 0;
+}
+
+h1{
+     font-family: 'Pacifico', cursive;
+     font-weight: lighter;
+     font-size: 3.125rem;
+}
+
+header p{
+     font-weight: 600;
+     font-size: 1.125rem;
+     line-height: 1.75;
+     letter-spacing: 1.5px;
+}
+
+#icone{
+     display: flex;
+     flex-direction: row;
+}
+
+.circulo{
+     width: 45px;
+     height: 45px;
+     background-color: rgba(0, 0, 0, 0.5);
+     border-radius: 50%;
+     margin-right: 13.5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.circulo:hover{
+     background-color: #2ecc71;
+}
+
+#icone2{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 25px;
+}
+
+.imagem{
+     width: 40px;
+}
+
+.texto{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     padding: 25px;
+}
+
+.texto p{
+     color: #333;
+     letter-spacing: 0;
+     font-size: 0.875rem;
+     margin: 0;
+     font-weight: 800;
+}
+
+.circulo2{
+     width: 80px;
+     height: 80px;
+     background-color: #2ecc71;
+     border-radius: 50%;
+     margin-right: 13.5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+#form{
+     background-color:rgb(200, 200, 200);
+     display: flex;
+     flex-direction: column-reverse;
+     padding: 25px;
+}
+
+#video{
+     padding:25px; 
+}
+
+iframe{
+     width: 100%;
+}
+
+
+@media (min-width: 992px){
+     header{
+          padding: 0 280px;
+     }
+
+     h1{
+          margin-bottom: 10px;
+     }
+
+     header>div{
+          margin-top: 125px;
+          margin-bottom: 145px; 
+     }
+
+     header p{
+          width: 50%;
+     }
+
+     #icone2{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+     }
+     
+     .imagem{
+          width: 40px;
+     }
+  
+     
+     .circulo2{
+          width: 80px;
+          height: 80px;
+          background-color: #2ecc71;
+          border-radius: 50%;
+          margin-right: 13.5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     #form{
+          display: flex;
+          flex-direction: row;
+     }
+
+     iframe{
+          width: 640px;
+     }
+}
