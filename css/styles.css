@@ -92,7 +92,6 @@ header>p{
      height: 80px;
      background-color: #2ecc71;
      border-radius: 50%;
-     margin-right: 13.5px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -112,9 +111,7 @@ header>p{
 }
 
 
-#video{
-    padding: 15px;
-}
+
 
 
 ul{
@@ -124,8 +121,6 @@ ul{
     display: flex;
     flex-direction: row;
     width: 100%;
-    
-
 }
 
 li#email{
@@ -143,28 +138,48 @@ ul>li>input#email{
     border: 0;
     margin: 0px;
     padding: 0;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     text-align: left;
     text-indent: 0.875rem;
     font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul>li input#botao{
     width: 100%;
     background: #2ecc71;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     height: 50px;
     padding: 0;
     border: 0;
     margin: 0;
     font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#video{
+    padding: 15px;
+    width: 100%;
+    height: 250px;
 }
 
 iframe{
      width: 100%;
      height: 100%;
+}
+
+#fotos{
+    padding: 25px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#galeria img:hover{
+    opacity: 0.5;
 }
 
 
@@ -186,11 +201,14 @@ iframe{
           width: 50%;
      }
 
+
      #icone2{
           display: flex;
           flex-direction: row;
           justify-content: space-around;
           align-items: center;
+          padding-left: 135px;
+          padding-right: 135px;
      }
      
      .imagem{
@@ -203,7 +221,6 @@ iframe{
           height: 80px;
           background-color: #2ecc71;
           border-radius: 50%;
-          margin-right: 13.5px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -212,7 +229,7 @@ iframe{
      #form{
           display: flex;
           flex-direction: row;
-          padding: 25px;
+          padding: 25px 145px;
      }
    
     #formulario{
@@ -220,13 +237,13 @@ iframe{
     }
    
    
-   #video{
+    #video{
        padding: 25px;
     }
 
 
     iframe{
-          width: 640px;
+          width:420px;
           height: 268px;
-     }
+    }
 }
