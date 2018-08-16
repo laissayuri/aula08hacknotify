@@ -8,6 +8,8 @@ body{
 
 header{
      background-image: url(../img/background.png);
+     background-repeat: no-repeat;
+     background-size: cover;
      border-top: 9px solid #2ecc71;
      padding: 0 40px;
      color: white;
@@ -24,7 +26,13 @@ h1{
      font-size: 3.125rem;
 }
 
-header p{
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+header>p{
      font-weight: 600;
      font-size: 1.125rem;
      line-height: 1.75;
@@ -71,7 +79,7 @@ header p{
      padding: 25px;
 }
 
-.texto p{
+.texto>p{
      color: #333;
      letter-spacing: 0;
      font-size: 0.875rem;
@@ -95,15 +103,68 @@ header p{
      background-color:rgb(200, 200, 200);
      display: flex;
      flex-direction: column-reverse;
-     padding: 25px;
+     align-items: center;
+     padding: 15px;
 }
 
+#formulario{
+    padding: 15px;
+}
+
+
 #video{
-     padding:25px; 
+    padding: 15px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+
+}
+
+li#email{
+    margin: 0;
+    width: 75%;
+}
+
+li#notify{
+    width: 25%;
+}
+
+ul>li>input#email{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    margin: 0px;
+    padding: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: left;
+    text-indent: 0.875rem;
+    font-size: 0.875rem;
+}
+
+ul>li input#botao{
+    width: 100%;
+    background: #2ecc71;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 0.875rem;
 }
 
 iframe{
      width: 100%;
+     height: 100%;
 }
 
 
@@ -121,7 +182,7 @@ iframe{
           margin-bottom: 145px; 
      }
 
-     header p{
+     header>p{
           width: 50%;
      }
 
@@ -151,9 +212,21 @@ iframe{
      #form{
           display: flex;
           flex-direction: row;
+          padding: 25px;
      }
+   
+    #formulario{
+        padding: 25px;
+    }
+   
+   
+   #video{
+       padding: 25px;
+    }
 
-     iframe{
+
+    iframe{
           width: 640px;
+          height: 268px;
      }
 }
